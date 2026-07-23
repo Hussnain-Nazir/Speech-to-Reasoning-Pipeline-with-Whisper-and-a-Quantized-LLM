@@ -1,0 +1,28 @@
+# Speech-to-Reasoning Pipeline - Requirements
+# Tested on Google Colab (Free Tier, T4 GPU), Python 3.10/3.11
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# NOTE: unsloth_zoo is listed as a separate explicit dependency on purpose.
+# Installing it only as a transitive dependency of unsloth has been observed
+# to fail silently on Colab and cause import errors at model-load time.
+
+# --- Speech recognition ---
+openai-whisper>=20231117
+
+# --- Quantized reasoning LLM ---
+unsloth>=2024.12
+unsloth_zoo>=2024.12
+
+# --- Core Hugging Face / model stack ---
+transformers>=4.46.0
+accelerate>=1.0.0
+bitsandbytes>=0.44.0
+torch>=2.4.0
+
+# --- Text-to-speech (used to auto-generate demo audio for self-contained testing) ---
+gTTS>=2.5.0
+
+# --- System dependency (install via apt, not pip) ---
+# ffmpeg

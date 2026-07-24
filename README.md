@@ -21,8 +21,8 @@ Build a Google Colab application that:
 ## Folder Structure  
 
 ```
-Speech-to-Reasoning/
-├── Speech_to_Reasoning_Pipeline.ipynb    ← Notebook
+Speech-to-Reasoning-Pipeline/
+├── speech-to-reasoning_pipeline.ipynb    ← Notebook
 ├── audio/      ← Auto-generated (gTTS) and/or user-uploaded audio clips
 ├── outputs/           Saved transcription + reasoning results
 │   ├── pipeline_results.txt
@@ -49,7 +49,7 @@ GPU (16 GB VRAM).
 
 ## How to Run
 
-1. Open `Speech_to_Reasoning_Pipeline.ipynb` in Google Colab (File > Upload notebook, or
+1. Open `speech-to-reasoning_pipeline.ipynb` in Google Colab (File > Upload notebook, or
    drag-and-drop).
 2. Set the runtime to GPU: **Runtime > Change runtime type > T4 GPU**.
 3. Run all cells in order: **Runtime > Run all**.
@@ -57,7 +57,7 @@ GPU (16 GB VRAM).
    pipeline on each one. No file upload is required, though an optional upload cell is provided if
    you want to test your own audio.
 5. Results (transcriptions and reasoning responses) are printed inline and saved to
-   `Speech_to_Reasoning/outputs/pipeline_results.txt`.
+   `Speech-to-Reasoning-Pipeline/outputs/pipeline_results.txt`.
 
 ## Key Design Decisions
 

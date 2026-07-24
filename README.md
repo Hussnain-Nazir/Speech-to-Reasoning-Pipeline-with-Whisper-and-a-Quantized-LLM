@@ -1,4 +1,4 @@
-# Speech-to-Reasoning Pipeline with Whisper and a Quantized LLM
+# Speech-to-Reasoning Pipeline
 
 ## Project Summary
 
